@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -16,8 +17,18 @@
             </div>
             <div class="form">
                 <form action="#">
-                   
+                    <label for="first_name">First Name:</label>
+                    <input type="text" id="first_name" placeholder="your name...obviously" name="first_name">
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" id="last_name" placeholder="your last name..." name="first_name">
+                    <label for="user_email">Email Address:</label>
+                    <input type="email" id="user_email" name="email" placeholder="you@example.com">
+                    <label for="user_password">Password:</label>
+                    <input type="password" id="user_password" name="password" placeholder="create a password with at least 8 characters">
                 </form>
+                <div class="submit-cont">
+                    <button type="submit">create an account</button>
+                </div>
             </div>
         </div>
     </div>
