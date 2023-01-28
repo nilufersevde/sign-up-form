@@ -8,7 +8,7 @@
 <body>
     <div class="container">
         <div class="img-container">
-            <img src="elia-pellegrini-C54fuJ5E8YU-unsplash.jpg">
+            <div class="text">SİGN UP FORM</div>
         </div>
         <div class="right-section">
             <div class="info">
@@ -16,10 +16,11 @@
                 <p>You know you want to!</p>
             </div>
             <div class="form">
-                <form action="#">
+                <p>- LET'S DO THIS! -</p>
+                <form action="#" id="my-form">
                     <div>
                         <label for="first_name">First Name:</label>
-                        <input type="text" id="first_name" placeholder="your name...obviously" name="first_name">
+                        <input type="text" id="first_name" placeholder="your name...obviously" name="first_name" required>
                     </div>
                     <div>
                         <label for="last_name">Last Name:</label>
@@ -27,25 +28,35 @@
                     </div>
                     <div>
                         <label for="user_email">Email Address:</label>
-                        <input type="email" id="user_email" name="email" placeholder="you@example.com">
+                        <input type="email" id="user_email" name="email" placeholder="you@example.com" required valid>
                     </div>
                     <div>
                         <label for="phonenumber">Phone Number:</label>
-                        <input type="tel" id="phonenumber" name="phonenumber" placeholder="create a password with at least 8 characters">
+                        <input type="number" id="phonenumber" name="phonenumber" placeholder="your phone number">
                     </div>
                     <div>
                         <label for="user_password">Password:</label>
-                        <input type="password" id="user_password" name="password" placeholder="create a password">
+                        <input type="password" id="user_password" name="password" placeholder="create a password" required>
                     </div>
                     <div>
                         <label for="confirm_password">Confirm-Password:</label>
-                        <input type="password" id="confirm_password" name="confirm_password" placeholder="write the password you created">
+                        <input type="password" id="confirm_password" name="confirm_password" placeholder="write the password you created" required oninput="check(this)">
+                        <script language='javascript' type='text/javascript'>
+                            function check(input) {
+                                if (input.value != document.getElementById('user_password').value) {
+                                    input.setCustomValidity('Password Must be Matching.');
+                                } else {
+                                    input.setCustomValidity('');
+                                }
+                            }
+                        </script>
                     </div>
                 </form>
-                <div class="submit-cont">
-                    <button type="submit">CREATE AN ACCOUNT</button>
-                </div>
             </div>
+            <div class="submit-cont">
+                    <button type="submit" value="submit" form="my-form">CREATE ACCOUNT</button>
+            </div>
+            
         </div>
     </div>
 </body>
