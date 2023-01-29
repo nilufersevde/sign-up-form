@@ -20,6 +20,7 @@ html, body {
 }
 
 .img-container {
+    flex:1;
     height: 55vw;
     width: 40vw;
     background-image: url(elia-pellegrini-C54fuJ5E8YU-unsplash.jpg);
@@ -30,15 +31,23 @@ html, body {
     align-items: center;
 }
 
-form {
-    display: flex;
-    width:60vw;
-    flex-flow: row wrap;
-    gap:60px;
-    padding:40px;
-    font-size: 20px;
-    font-weight: 200;
-    
+#photo-by {
+    position:absolute;
+    top:97%;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    text-align: end;
+    background-color: rgb(150, 100, 50);
+}
+
+#sign {
+    background-color: rgba(0, 0, 0, 0.400);
+    font-size: 30px;
+    position:absolute;
+    top:82%;
+    width: 40vw;
+    text-align: center;
+    padding:30px 0px;
 }
 
 .right-section {
@@ -50,8 +59,32 @@ form {
 .info {
     font-size:25px;
     font-weight:500;
-    padding:20px 40px 5px 40px;
+    padding:40px 40px 0px 40px;
     line-height: 1.4;
+    margin-top: 30px;
+}
+
+.form-cont {
+    background-color: rgb(251, 253, 255);
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.200);
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.form-cont p {
+    margin:5px 0px 0px 0px;
+}
+
+form {
+    display: flex;
+    width:60vw;
+    flex-flow: row wrap;
+    gap:60px;
+    padding:30px 10px 10px 40px;
+    font-size: 20px;
+    font-weight: 100;
+    
 }
 
 input {
@@ -62,6 +95,16 @@ input {
     width: 210px;
     height: 35px;
     padding: 5px;
+}
+
+input:focus {
+    outline:none;
+    box-shadow:4px 4px 5px rgba(0, 0, 0, 0.342);
+    border:rgb(237, 42, 42) 2px solid;
+}
+
+input:valid:focus {
+    border:rgb(15, 194, 57) 2px solid;
 }
 
 label {
@@ -92,30 +135,11 @@ button {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.200);
 }
 
-input:focus {
-    outline:none;
-    box-shadow:4px 4px 5px rgba(0, 0, 0, 0.342);
-}
-
 button:hover {
     background-color: rgb(123, 81, 38);
 }
 
-.text {
-    background-color: rgba(0, 0, 0, 0.400);
-    font-size: 30px;
-    position:absolute;
-    top:82%;
-    width: 40vw;
-    text-align: center;
-    padding:30px 0px;
-}
 
 
-.form {
-    background-color: rgb(251, 253, 255);
-    text-align: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.200);
-    font-size: 20px;
-    padding-top: 10px;
-}
+
+
