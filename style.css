@@ -61,9 +61,8 @@ html, body {
     font-weight:500;
     padding:40px 40px 0px 40px;
     line-height: 1.4;
-    margin-top: 30px;
+    margin-top: 10px;
 }
-
 .form-cont {
     background-color: rgb(251, 253, 255);
     text-align: center;
@@ -139,7 +138,14 @@ button:hover {
     background-color: rgb(123, 81, 38);
 }
 
+a {
+    color: rgb(150, 100, 50);
+    font-weight: 600;
+}
 
+a:hover {
+    color: rgb(123, 81, 38); 
+}
 
 
 
